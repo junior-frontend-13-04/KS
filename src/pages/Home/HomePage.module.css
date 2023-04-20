@@ -1,0 +1,19 @@
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: scale-down;
+    width: 100%;
+    z-index: -1;
+}
+
+.text{
+    color: #f7f21a;
+    margin-top: 200px;
+    font-size: 70px;
+    mix-blend-mode: overlay;
+}
+
+.typewritter{
+    margin-left: 200px;
+}
