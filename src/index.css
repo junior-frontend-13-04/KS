@@ -5,6 +5,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Jost', sans-serif;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .section{
@@ -14,5 +21,5 @@
 
 .container{
   width: 1100px;
-  margin: 0 auto;
+  margin: 150px auto 0;
 }
