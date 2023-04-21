@@ -17,3 +17,26 @@
 .typewritter{
     margin-left: 200px;
 }
+
+.btn{
+    background-color: #1c6b72;
+    color: white;
+    width: 400px;
+    height: 100px;
+    margin-left: 35%;
+    margin-top: 200px;
+    outline: none;
+    border:none;
+    font-size: 50px;
+    border-radius: 5px;
+    animation: btnRent 2s linear infinite alternate;
+}
+
+@keyframes btnRent {
+    from {
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}

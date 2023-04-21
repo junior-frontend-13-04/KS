@@ -1,0 +1,123 @@
+.box{
+    height: 2000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card{
+    width: 450px;
+    height: 300px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    position: relative;  
+    cursor: pointer;  
+    overflow: hidden;
+}
+
+.cardImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* position: absolute; */
+    border-radius: 5px;
+}
+
+.card:hover .extraDescr{
+    right: 0;
+}
+
+.extraDescr{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    font-size: 30px;
+}
+
+.btns{
+    display: flex;
+    gap: 10px;
+}
+
+
+.button {
+    width: 80px;
+    height: 40px;
+    flex-direction: row;
+    display: inline-block;
+    padding: 12px 12px;
+    border: 1px solid #4f4f4f;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 19px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    font-size: 14px;
+   }
+   
+   .button:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+   }
+   
+   .button:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #1c6b72;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+   }
+   
+   .button:hover {
+    color: #ffffff;
+    border: 1px solid #1c6b72;
+   }
+   
+   .button:hover:before {
+    top: -35%;
+    background-color: #1c6b72;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+   }
+   
+   .button:hover:after {
+    top: -45%;
+    background-color: #1c6b72;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+   }
